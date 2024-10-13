@@ -1,0 +1,454 @@
+:root {
+  /* Background Color */
+  --bg-white: #fff;
+  --bg-green: #0db760;
+  /* Text Color */
+  --text-white: #fff;
+  --text-black: #000;
+  --text-green: #0db760;
+
+  /* Font Family */
+  --primary-font: "Rubik", sans-serif;
+  --secondary-font: "Roboto";
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  -user-select: none;
+}
+
+nav {
+  background-color: var(--bg-white);
+
+  .navbar-brand {
+    color: var(--text-green);
+    font-weight: 500;
+    border: none;
+
+    &:hover {
+      color: var(--text-green);
+    }
+
+    .custom-name {
+      color: var(--text-black);
+      font-weight: 900;
+    }
+  }
+
+  .nav-link .active {
+    color: var(--text-green);
+  }
+
+  button {
+    background-color: var(--bg-green);
+    color: white;
+    transition: 0.3s linear;
+    border-radius: 8px;
+    padding: 10px 20px;
+
+    &:hover {
+      background-color: transparent;
+      color: var(--text-black);
+    }
+  }
+}
+
+
+.hero{
+
+  .hero-content{
+
+    .custom-heading{
+      color: var(--text-green);
+    }
+
+
+    a{
+      text-decoration: none;
+      color: var(--text-green);
+    }
+
+
+    .buttons{
+
+
+      .btn-light{
+
+        background-color: var(--bg-green);
+        border: 1px solid var(--bg-green);
+        padding: 5px 10px;
+        color: var(--text-white);
+        border-radius: 8px;
+      }
+
+      .btn-dark{
+        border: 1px solid var(--bg-green);
+        background-color: transparent;
+        padding: 5px 10px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+
+
+.achievement {
+  color: var(--text-black);
+  border-bottom: 1px solid var(--bg-green);
+  border-top: 1px solid var(--bg-green);
+  border-radius: 20px;
+  padding: 20px 10px;
+
+  .card {
+    background-color: transparent;
+  }
+}
+
+
+/* About section start */
+
+.about {
+  .about-heading {
+    color: var(--text-green);
+  }
+
+  .custom-heading{
+    color: var(--text-green);
+  }
+
+  .about-content {
+    .about-right {
+      .right-box {
+        .box {
+          background-color: rgba(0, 255, 0, 0.084);
+          padding: 20px;
+          border: 3px dotted var(--bg-green);
+          border-radius: 8px;
+        }
+      }
+    }
+  }
+}
+
+/* About section End */
+
+
+
+/* Service section start */
+
+.services {
+  .services-heading {
+    color: var(--text-green);
+  }
+  .services-cards {
+    .card {
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.142);
+
+      img {
+        width: 30%;
+      }
+
+      .card-btn {
+        button {
+          margin-left: -12px;
+          width: fit-content;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          transition: 0.3s linear;
+          padding: 10px 30px;
+          color: var(--text-green);
+          i {
+            transform: rotate(40deg);
+            transition: 0.3s linear;
+          }
+
+          &:hover {
+            i {
+              transform: rotateX(0deg);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* service section modal styling start */
+
+.modal {
+  .modal-title {
+    color: var(--text-green);
+  }
+
+  .modal-body {
+    i {
+      color: var(--bg-green);
+      font-weight: 900;
+      font-size: larger;
+      margin-top: 5px;
+    }
+  }
+
+  .modal-footer {
+    button {
+      width: fit-content;
+      background-color: var(--bg-green);
+      outline: none;
+      border: none;
+      transition: 0.3s linear;
+      padding: 10px 30px;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.142);
+      }
+    }
+  }
+}
+/* service section modal styling end */
+
+/* service section end */
+
+
+
+
+/* Portfolio section start */
+
+.portfolio {
+  .portfolio-top {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    h4 {
+      border: 2px solid var(--text-green);
+      width: fit-content;
+      border-radius: 50%;
+      padding: 4px 10px;
+    }
+
+    .custom-heading {
+      color: var(--text-green);
+    }
+  }
+
+  .nav {
+    .nav-link {
+      background-color: transparent;
+      color: var(--text-black);
+    }
+
+    i {
+      transform: rotate(40deg);
+      transition: 0.3s linear;
+    }
+
+    .active {
+      color: var(--text-green);
+
+      i {
+        transform: rotate(0deg);
+      }
+    }
+  }
+
+  .nav-btn{
+
+    button{
+
+      border: 1px solid transparent;
+
+      
+    }
+  }
+
+  button{
+    background-color: var(--bg-green);
+    border: 1px solid var(--bg-green);
+
+    &:hover{
+      background-color: transparent;
+      border: 1px solid var(--bg-green);
+      color: var(--text-green);
+    }
+  }
+}
+
+
+/* contact-section-enter */
+
+.contact {
+  padding-top: 50px;
+  .contact-top-info {
+    h4 {
+      border: 2px solid var(--text-green);
+      width: fit-content;
+      border-radius: 50%;
+      padding: 4px 10px;
+    }
+
+    .custom-heading {
+      color: var(--text-green);
+    }
+  }
+
+  .contact-bottom {
+    a {
+      text-decoration: none;
+      color: var(--text-black);
+    }
+    .contact-links {
+      .card {
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.068);
+        padding: 20px;
+      }
+
+      i {
+        background-color: var(--bg-green);
+        padding: 10px;
+        border-radius: 8px;
+        color: var(--text-white);
+      }
+
+      .card-detail {
+        padding: 0px;
+        margin: 0px;
+      }
+    }
+
+    .form-container {
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      /* // iOS Reset  */
+      input {
+        appearance: none;
+        border-radius: 0;
+      }
+
+      .card {
+        margin: 2rem auto;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 425px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px 0 rgba(#999, 0.25);
+        padding: 0.75rem;
+      }
+
+      /* .card-image {
+        border-radius: 8px;
+        overflow: hidden;
+        padding-bottom: 65%;
+        background-image: url('https://assets.codepen.io/285131/coffee_1.jpg');
+        background-repeat: no-repeat;
+        background-size: 150%;
+        background-position: 0 5%;
+        position: relative;
+      } */
+
+      .card-heading {
+        text-align: center;
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: var(--text-green);
+        line-height: 1.222;
+        small {
+          display: block;
+          font-size: 0.75em;
+          font-weight: 400;
+          margin-top: 0.25em;
+          color: var(--text-black);
+        }
+      }
+
+      .card-form {
+        padding: 2rem 1rem 0;
+      }
+
+      .input {
+        display: flex;
+        flex-direction: column-reverse;
+        position: relative;
+        padding-top: 1.5rem;
+        & + .input {
+          margin-top: 1.5rem;
+        }
+      }
+
+      .input-label {
+        color: var(--text-green);
+        position: absolute;
+        top: 1.5rem;
+        transition: 0.25s ease;
+      }
+
+      .input-field {
+        border: 0;
+        z-index: 1;
+        background-color: transparent;
+        border-bottom: 2px solid #eee;
+        font: inherit;
+        font-size: 1.125rem;
+        padding: 0.25rem 0;
+        &:focus,
+        &:valid {
+          outline: 0;
+          border-bottom-color: var(--text-green);
+          & + .input-label {
+            color: var(--text-green);
+            transform: translateY(-1.5rem);
+          }
+        }
+      }
+
+      .action {
+        margin-top: 2rem;
+      }
+
+      .action-button {
+        font: inherit;
+        font-size: 1.25rem;
+        padding: 1em;
+        width: 100%;
+        font-weight: 500;
+        background-color: var(--bg-green);
+        border-radius: 6px;
+        color: #fff;
+        border: 1px solid transparent;
+        transition: 0.3s linear;
+        &:focus {
+          outline: 0;
+        }
+
+        &:hover {
+          background-color: var(--bg-white);
+          color: var(--text-green);
+          border: 1px solid var(--text-green);
+        }
+      }
+
+      .card-info {
+        padding: 1rem 1rem;
+        text-align: center;
+        font-size: 0.875rem;
+        a {
+          display: block;
+          color: var(--text-green);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+/* contact-section-exit */
